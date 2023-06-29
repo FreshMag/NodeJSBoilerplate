@@ -1,0 +1,16 @@
+doctype html
+html(lang='en')
+    head
+        meta(charset='UTF-8')
+        title #{title}
+        link(rel='stylesheet', href='/css/bootstrap.min.css')
+        link(rel='stylesheet', href='/css/style.css')
+    body
+        .m-5
+            h1.alert-danger
+                | #{title}
+            #content.row
+                != content
+        script(src='/js/bootstrap.js')
+        script(src='/js/jquery.js')
+        script(src='/scripts/main.js')

@@ -15,7 +15,7 @@ export default class Db {
 
         // Configure lowdb to write data to JSON file
         const adapter = new JSONFile(file)
-        const defaultData = { posts: [] }
+        const defaultData = { example: [] }
         this.db = new Low(adapter, defaultData)
 
         await this.db.read()
